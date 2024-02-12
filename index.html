@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Genius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.3/dist/full.min.css"
       rel="stylesheet"
@@ -22,7 +28,256 @@
       };
     </script>
   </head>
-  <body>
-
+  <body class="p-[30px] font-[poppins]">
+    <header>
+      <nav class="bg-[#e6f4ff] p-4 rounded-lg">
+        <div class="mx-auto flex justify-between items-center">
+          <div>
+            <h1 class="text-lg font-bold">Interactive</h1>
+            <p class="text-sm">Geometry Genius</p>
+          </div>
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-6 py-1 bg-blue-500 text-white"
+          >
+            Blog
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-[30px]">
+      <div class="flex flex-col lg:flex-row gap-5">
+        <div
+          class="basis-[75%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <div
+            class="border text-card-foreground w-[350px] bg-white p-4 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="space-y-1.5 p-6 flex flex-col items-center pb-4">
+              <div class="w-[243px] h-[194px] rounded-b-full">
+                <img class="w-full" src="./images/triangle.png" alt="" />
+              </div>
+              <h3
+                class="whitespace-nowrap tracking-tight pt-4 text-xl font-bold"
+              >
+                Triangle
+              </h3>
+            </div>
+            <div class="px-6">
+              <div class="text-center text-sm py-2">Area (A) = 0.5 × b × h</div>
+              <form class="flex justify-between items-center">
+                <input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="b"
+                /><span class="px-2">cm</span
+                ><input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="h"
+                /><span class="px-2">cm</span>
+              </form>
+            </div>
+            <div class="items-center p-6 flex justify-center pt-4">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+          <div
+            class="border text-card-foreground w-[350px] bg-white p-4 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="space-y-1.5 p-6 flex flex-col items-center pb-4">
+              <div class="w-[243px] h-[194px] rounded-b-full">
+                <img
+                  class="w-full h-full"
+                  src="./images/rectangle.png"
+                  alt=""
+                />
+              </div>
+              <h3
+                class="whitespace-nowrap tracking-tight pt-4 text-xl font-bold"
+              >
+                Rectangle
+              </h3>
+            </div>
+            <div class="px-6">
+              <div class="text-center text-sm py-2">Area (A) = W × I</div>
+              <form class="flex justify-between items-center">
+                <input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="w"
+                /><span class="px-2">cm</span
+                ><input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="I"
+                /><span class="px-2">cm</span>
+              </form>
+            </div>
+            <div class="items-center p-6 flex justify-center pt-4">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+          <div
+            class="border text-card-foreground w-[350px] bg-white p-4 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="space-y-1.5 p-6 flex flex-col items-center pb-4">
+              <div class="w-[243px] h-[194px] rounded-b-full">
+                <img
+                  class="w-full h-full"
+                  src="./images/parallelogram.png"
+                  alt=""
+                />
+              </div>
+              <h3
+                class="whitespace-nowrap tracking-tight pt-4 text-xl font-bold"
+              >
+                Parallelogram
+              </h3>
+            </div>
+            <div class="px-6">
+              <div class="text-center text-sm py-2">Area (A) = b × h</div>
+              <form class="flex justify-between items-center">
+                <input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="b"
+                /><span class="px-2">cm</span
+                ><input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="h"
+                /><span class="px-2">cm</span>
+              </form>
+            </div>
+            <div class="items-center p-6 flex justify-center pt-4">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+          <div
+            class="border text-card-foreground w-[350px] bg-white p-4 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="space-y-1.5 p-6 flex flex-col items-center pb-4">
+              <div class="w-[243px] h-[194px] rounded-b-full">
+                <img class="w-full h-full" src="./images/rhombus.png" alt="" />
+              </div>
+              <h3
+                class="whitespace-nowrap tracking-tight pt-4 text-xl font-bold"
+              >
+                Rhombus
+              </h3>
+            </div>
+            <div class="px-6">
+              <div class="text-center text-sm py-2">
+                Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub>
+              </div>
+              <form class="flex justify-between items-center">
+                <input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="d1"
+                /><span class="px-2">cm</span
+                ><input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="d2"
+                /><span class="px-2">cm</span>
+              </form>
+            </div>
+            <div class="items-center p-6 flex justify-center pt-4">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+          <div
+            class="border text-card-foreground w-[350px] bg-white p-4 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="space-y-1.5 p-6 flex flex-col items-center pb-4">
+              <div class="w-[243px] h-[194px] rounded-b-full">
+                <img class="w-full h-full" src="./images/pentagon.png" alt="" />
+              </div>
+              <h3
+                class="whitespace-nowrap tracking-tight pt-4 text-xl font-bold"
+              >
+                Pentagon
+              </h3>
+            </div>
+            <div class="px-6">
+              <div class="text-center text-sm py-2">Area (A) = 0.5 × p × b</div>
+              <form class="flex justify-between items-center">
+                <input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="p"
+                /><span class="px-2">cm</span
+                ><input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="b"
+                /><span class="px-2">cm</span>
+              </form>
+            </div>
+            <div class="items-center p-6 flex justify-center pt-4">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+          <div
+            class="border text-card-foreground w-[350px] bg-white p-4 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="space-y-1.5 p-6 flex flex-col items-center pb-4">
+              <div class="w-[243px] h-[194px] rounded-b-full">
+                <img class="w-full h-full" src="./images/ellipse.png" alt="" />
+              </div>
+              <h3
+                class="whitespace-nowrap tracking-tight pt-4 text-xl font-bold"
+              >
+                Ellipse
+              </h3>
+            </div>
+            <div class="px-6">
+              <div class="text-center text-sm py-2">Area (A) = &Pi;ab</div>
+              <form class="flex justify-between items-center">
+                <input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="a"
+                /><span class="px-2">cm</span
+                ><input
+                  class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+                  placeholder="b"
+                /><span class="px-2">cm</span>
+              </form>
+            </div>
+            <div class="items-center p-6 flex justify-center pt-4">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="basis-[25%] h-[475px] rounded-lg border-[#1111111A] border pb-8"
+        >
+          <h3 class="mt-5 font-medium text-center underline">
+            Area Calculation
+          </h3>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

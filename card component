@@ -1,0 +1,33 @@
+<div
+      class="border text-card-foreground w-[350px] bg-white p-4 rounded-lg shadow-md"
+      data-v0-t="card"
+    >
+      <div class="space-y-1.5 p-6 flex flex-col items-center pb-4">
+        <div class="w-[243px] h-[194px] rounded-b-full">
+            <img class="w-full" src="./images/triangle.png" alt="">
+        </div>
+        <h3 class="whitespace-nowrap tracking-tight pt-4 text-xl font-bold">
+          Triangle
+        </h3>
+      </div>
+      <div class="px-6">
+        <div class="text-center text-sm py-2">Area (A) = 0.5 × b × h</div>
+        <form class="flex justify-between items-center">
+          <input
+            class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+            placeholder="b"
+          /><span class="px-2">cm</span
+          ><input
+            class="flex h-10 w-full border-input bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border rounded px-2 py-1 text-center"
+            placeholder="h"
+          /><span class="px-2">cm</span>
+        </form>
+      </div>
+      <div class="items-center p-6 flex justify-center pt-4">
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Calculate
+        </button>
+      </div>
+    </div>
